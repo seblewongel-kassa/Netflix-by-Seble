@@ -1,0 +1,47 @@
+*{
+    list-style: none;
+}
+.header-outer-container{
+    background-color: rgb(22, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    color: white;
+    
+}
+.header-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left ul{
+    width: 140%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+li img{
+    width: 60px;
+}
+.header-right{
+    width: 10%;
+}
+
+.header-right ul{
+
+display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.Footer_link{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    color: #fff;
+}
