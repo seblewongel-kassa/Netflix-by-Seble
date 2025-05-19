@@ -15,7 +15,6 @@ const Footer = () => {
             <TwitterIcon/>
             <YouTubeIcon/>
           </div>
-
           <div className="Footer_data">
             <div>
               <ul>

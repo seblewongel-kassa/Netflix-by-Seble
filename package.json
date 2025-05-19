@@ -14,10 +14,14 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.1.0",
     "@mui/material": "^7.1.0",
+    "axios": "^1.9.0",
     "material-icon": "^0.1.4",
     "material-icons": "^1.13.14",
+    "movie-trailer": "^3.2.2",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.0",
+    "react-youtube": "^10.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

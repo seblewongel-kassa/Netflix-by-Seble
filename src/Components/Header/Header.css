@@ -1,7 +1,11 @@
-*{
+* {
     list-style: none;
-}
-.header-outer-container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header-outer-container {
     background-color: rgb(22, 20, 20);
     display: flex;
     justify-content: center;
@@ -10,38 +14,120 @@
     top: 0;
     height: 10vh;
     color: white;
-    
-}
-.header-container{
+    z-index: 1000;
+  }
+  
+  .header-container {
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header-left ul{
-    width: 140%;
+  }
+  
+  .header-left {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
     align-items: center;
-}
-li img{
-    width: 60px;
-}
-.header-right{
-    width: 10%;
-}
-
-.header-right ul{
-
-display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-}
-.Footer_link{
+    gap: 20px;
+  }
+  
+  .Netflix-logo {
+    width: 90px;
+    cursor: pointer;
+  }
+  
+  .HeaderLink {
     display: flex;
-    justify-content: space-between;
-    width: 15%;
-    color: #fff;
-}
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    transition: all 0.3s ease;
+  }
+  
+  .HeaderLink li {
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .HeaderLink li:hover {
+    color: #b3b3b3;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-right-licon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-right-licon:hover{
+    color: gainsboro;
+  }
+  
+.MenuIcon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 950px) {
+    .HeaderLink {
+      display: none;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0;
+      background-color: rgb(20, 20, 20);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    .HeaderLink.open {
+      display: flex;
+    }
+  
+    .HeaderLink li {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 1rem;
+    }
+  
+    .HeaderLink li:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  
+    .MenuIcon {
+      display: block;
+    }
+  
+    .HeaderLink li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  }
+  
+  @media (max-width: 468px) {
+    .HeaderLink {
+      gap: 10px;
+    }
+  
+    .header-icons {
+      gap: 10px;
+    }
+  
+    .Netflix-logo {
+      width: 70px;
+    }
+  }
+  
